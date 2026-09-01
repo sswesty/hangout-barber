@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import AnimatedStat from "@/components/AnimatedStat";
 import { ABOUT_IMAGE } from "@/lib/data";
 import type { SiteSettings } from "@/types";
 
@@ -18,12 +19,12 @@ export default function About({ settings }: { settings: SiteSettings }) {
             ))}
           </div>
 
-          <dl className="mt-10 grid grid-cols-3 gap-6 border-t border-ink/10 pt-8">
+          <dl className="mt-10 grid grid-cols-1 gap-6 border-t border-ink/10 pt-8 sm:grid-cols-3">
             {settings.aboutStats.map((stat) => (
               <div key={stat.label}>
                 <dt className="sr-only">{stat.label}</dt>
                 <dd className="font-display text-3xl font-bold text-ink sm:text-4xl">
-                  {stat.value}
+                  <AnimatedStat value={stat.value} />
                 </dd>
                 <dd className="mt-1 text-xs uppercase tracking-widest2 text-charcoal/60">
                   {stat.label}
