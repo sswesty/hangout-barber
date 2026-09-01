@@ -21,7 +21,7 @@ export default function About({ settings }: { settings: SiteSettings }) {
 
           <dl className="mt-10 grid grid-cols-1 gap-6 border-t border-ink/10 pt-8 sm:grid-cols-3">
             {settings.aboutStats.map((stat) => (
-              <div key={stat.label}>
+              <div key={stat.label} className="text-center sm:text-left">
                 <dt className="sr-only">{stat.label}</dt>
                 <dd className="font-display text-3xl font-bold text-ink sm:text-4xl">
                   <AnimatedStat value={stat.value} />
