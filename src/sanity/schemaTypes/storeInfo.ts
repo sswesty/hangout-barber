@@ -11,7 +11,7 @@ export default defineType({
       name: "name",
       title: "Store name",
       type: "string",
-      description: "e.g. Dakabin",
+      description: "e.g. Mango Hill",
       validation: (rule) => rule.required(),
     }),
     defineField({

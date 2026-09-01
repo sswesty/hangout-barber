@@ -55,22 +55,6 @@ export const DEFAULT_OPENING_HOURS: OpeningHour[] = [
 
 export const DEFAULT_STORES: StoreInfo[] = [
   {
-    name: "Dakabin",
-    slug: "dakabin",
-    addressLine: "289 Old Gympie Rd",
-    suburb: "Dakabin",
-    region: "QLD",
-    phone: "(07) 3283 8833",
-    mapEmbedUrl:
-      "https://www.google.com/maps?q=" +
-      encodeURIComponent("289 Old Gympie Rd, Dakabin QLD") +
-      "&output=embed",
-    blurb:
-      "Our original home base — a stripped-back, brick-and-timber shop where the clippers have barely stopped since day one.",
-    heroImage: { url: "/img/dakabin-hero.jpg", alt: "Inside the Hangout Barber Club Dakabin store" },
-    order: 1,
-  },
-  {
     name: "Mango Hill",
     slug: "mango-hill",
     addressLine: "1751 Anzac Ave",
@@ -82,8 +66,24 @@ export const DEFAULT_STORES: StoreInfo[] = [
       encodeURIComponent("1751 Anzac Ave, Mango Hill QLD") +
       "&output=embed",
     blurb:
-      "Our second chair house on Anzac Ave — same standards, same crew culture, built for the northside regulars.",
+      "Our original home base — a stripped-back, brick-and-timber shop where the clippers have barely stopped since day one.",
     heroImage: { url: "/img/north-lakes-hero.jpg", alt: "Inside the Hangout Barber Club Mango Hill store" },
+    order: 1,
+  },
+  {
+    name: "Dakabin",
+    slug: "dakabin",
+    addressLine: "289 Old Gympie Rd",
+    suburb: "Dakabin",
+    region: "QLD",
+    phone: "(07) 3283 8833",
+    mapEmbedUrl:
+      "https://www.google.com/maps?q=" +
+      encodeURIComponent("289 Old Gympie Rd, Dakabin QLD") +
+      "&output=embed",
+    blurb:
+      "Our second chair house on Old Gympie Rd — same standards, same crew culture, built for the regulars who found us next.",
+    heroImage: { url: "/img/dakabin-hero.jpg", alt: "Inside the Hangout Barber Club Dakabin store" },
     order: 2,
   },
 ];
