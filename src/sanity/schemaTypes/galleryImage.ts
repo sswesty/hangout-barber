@@ -25,7 +25,8 @@ export default defineType({
       title: "Store",
       type: "reference",
       to: [{ type: "storeInfo" }],
-      validation: (rule) => rule.required(),
+      description:
+        "Optional. Tag a store to also show this photo on that store's card. Leave blank for a general shot that only appears in the site-wide Gallery section.",
     }),
     defineField({
       name: "order",

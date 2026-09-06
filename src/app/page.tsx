@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import FindUs from "@/components/FindUs";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import JsonLd from "@/components/JsonLd";
@@ -29,6 +30,8 @@ export default async function HomePage() {
         <About settings={settings} />
         <SectionDivider />
         <Stores stores={stores} gallery={gallery} settings={settings} />
+        <SectionDivider />
+        <Gallery images={gallery} />
         <SectionDivider />
         <FindUs stores={stores} settings={settings} />
       </main>

@@ -41,7 +41,7 @@ export interface GalleryImage {
   _id?: string;
   image: SanityImageRef;
   alt: string;
-  store: string; // matches StoreInfo.slug
+  store?: string; // matches StoreInfo.slug — omitted for general/unassigned photos
   order?: number;
 }
 

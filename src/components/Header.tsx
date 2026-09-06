@@ -11,6 +11,7 @@ export default function Header({ settings }: { settings: SiteSettings }) {
   const navLinks = [
     { href: "#about", label: settings.navAboutLabel },
     { href: "#stores", label: settings.navStoresLabel },
+    { href: "#gallery", label: "Gallery" },
   ];
 
   useEffect(() => {
