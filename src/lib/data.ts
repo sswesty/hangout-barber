@@ -57,13 +57,14 @@ export const DEFAULT_STORES: StoreInfo[] = [
   {
     name: "Mango Hill",
     slug: "mango-hill",
-    addressLine: "1751 Anzac Ave",
+    addressLine: "Shop 6/1751 Anzac Ave",
     suburb: "Mango Hill",
     region: "QLD",
+    postcode: "4509",
     phone: "(07) 3385 5242",
     mapEmbedUrl:
       "https://www.google.com/maps?q=" +
-      encodeURIComponent("1751 Anzac Ave, Mango Hill QLD") +
+      encodeURIComponent("Hangout Barber Club, Shop 6/1751 Anzac Ave, Mango Hill QLD 4509") +
       "&output=embed",
     blurb:
       "Our original home base — a stripped-back, brick-and-timber shop where the clippers have barely stopped since day one.",
@@ -73,13 +74,13 @@ export const DEFAULT_STORES: StoreInfo[] = [
   {
     name: "Dakabin",
     slug: "dakabin",
-    addressLine: "289 Old Gympie Rd",
+    addressLine: "T12/289 Old Gympie Rd",
     suburb: "Dakabin",
     region: "QLD",
     phone: "(07) 3283 8833",
     mapEmbedUrl:
       "https://www.google.com/maps?q=" +
-      encodeURIComponent("289 Old Gympie Rd, Dakabin QLD") +
+      encodeURIComponent("Hangout Barber Club, T12/289 Old Gympie Rd, Dakabin QLD") +
       "&output=embed",
     blurb:
       "Our second chair house on Old Gympie Rd — same standards, same crew culture, built for the regulars who found us next.",
@@ -107,8 +108,8 @@ export const LOGO_IMAGE = {
 export const NAVBAR_LOGO_IMAGE = {
   url: "/img/navbar-logo.png",
   alt: "Hangout Barber Club",
-  width: 1102,
-  height: 576,
+  width: 1275,
+  height: 879,
 };
 
 export const DAY_LABEL: Record<OpeningHour["day"], string> = {
